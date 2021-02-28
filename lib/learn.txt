@@ -1,0 +1,79 @@
+1:state is behavious of an app at a given moment.
+
+2: appBar: AppBar(
+            title: Text(
+              'Altereco',
+              style: TextStyle(
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+            backgroundColor: Colors.green[500],
+          ),
+          backgroundColor: Colors.green[50],
+          body: GridView(
+            scrollDirection: Axis.vertical,
+            gridDelegate:
+                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            children: [
+              Container(
+                color: Colors.green[400],
+                margin: EdgeInsets.all(10.0),
+                child: Center(child: Text("Transport")),
+              ),
+              Container(
+                color: Colors.green[400],
+                margin: EdgeInsets.all(10.0),
+                child: Center(child: Text("Food")),
+              ),
+              Container(
+                color: Colors.green[400],
+                margin: EdgeInsets.all(10.0),
+                child: Center(child: Text("Appliances")),
+              ),
+              Container(
+                color: Colors.green[400],
+                margin: EdgeInsets.all(10.0),
+                child: Center(child: Text("Fashion")),
+              ),
+              Container(
+                color: Colors.green[400],
+                margin: EdgeInsets.all(10.0),
+                child: Center(child: Text("Furniture")),
+              ),
+              Container(
+                color: Colors.green[400],
+                margin: EdgeInsets.all(10.0),
+                child: Center(child: Text("Accessories")),
+              ),
+            ],
+          )
+
+
+
+
+                    title: Center(
+            child: Text(
+              'Altereco',
+              style: TextStyle(
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ),
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final List<String> _listitem = [
+      'assets/Accessories.png',
+      'assets/Appliances.png',
+      'assets/Fashion.png',
+      'assets/food.png',
+      'assets/Furniture.png',
+      'assets/Transport.png',
+
+    ];
+
+child: InkWell(
+onTap: () => Navigator.of(context).push(
+new MaterialPageRoute(
+builder: (context) => new Details())),
